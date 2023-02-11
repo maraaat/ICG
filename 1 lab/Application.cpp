@@ -11,13 +11,15 @@ void Triangle() {
     glEnd();
 }
 void Points() {
-     glPointSize(4);
+     glPointSize(5);
 
      glBegin(GL_POINTS);
      glColor3f(0.0, 1.0, 0.0);
      glVertex2f(0.0f, 0.5f);
      glColor3f(0.0, 0.0, 1.0);
      glVertex2f(0.5f, -0.5f);
+     glColor3f(1.0, 0.0, 1.0);
+     glVertex2f(-0.5f, -0.5f);
      glEnd();
 }
 
@@ -51,24 +53,11 @@ int main(void)
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))  //цикл, работающий пока окно не закрыто
     {
-        
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);  //цвет зачистки
-
-        glClear(GL_COLOR_BUFFER_BIT);
+        Points();
+        Triangle();
        
-        for (int i = 0; i < 10; i++) {
-            
-            //glLoadIdentity();  //единичная матрица, к-я возвращет с-му коорд в исх состояние
-            
-            glPushMatrix(); //сохраняем текущую матрицу в стек
-            glRotatef(45*i, 0, 0, 1);
-            glTranslatef(0.5, 0, 0);
-            Triangle();
-            Points();
-            glPopMatrix(); //загружаем состояние матрицы, к-ое было в начале цикла
-        }
 
-        glfwSetKeyCallback(window, key_callback); //ф-я выхода на Еск
+        //glfwSetKeyCallback(window, key_callback); //ф-я выхода на Еск
         
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
