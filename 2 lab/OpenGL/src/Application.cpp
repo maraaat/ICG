@@ -88,7 +88,7 @@ int main(void)
         //Triangle();
         
 
-        glRotatef(45, 0, 0, 1);
+        /*glRotatef(45, 0, 0, 1);
         glBegin(GL_TRIANGLES);
         glColor3f(0.0, 1.0, 0.0);
         glVertex2f(-0.1f, -0.25f);
@@ -98,7 +98,7 @@ int main(void)
         glVertex2f(0.25f, -0.25f);
         glEnd();
         glRotatef(1, 0, 0, 10);
-        glPopMatrix();
+        glPopMatrix();*/
 
         glBegin(GL_TRIANGLES);
         glColor3f(0.0, 1.0, 0.0);
@@ -108,10 +108,6 @@ int main(void)
         glColor3f(1.0, 1.0, 0.0);
         glVertex2f(0.25f, -0.25f);
         glEnd();
-
-
-
-
 
 
 
