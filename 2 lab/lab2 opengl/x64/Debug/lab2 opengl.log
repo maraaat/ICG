@@ -1,4 +1,0 @@
-﻿  lab2_opengl.cpp
-C:\Users\Asus\source\repos\lab2 opengl\lab2 opengl\lab2_opengl.cpp(70,26): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
-LINK : warning LNK4098: библиотека по умолчанию "MSVCRT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
-  lab2 opengl.vcxproj -> C:\Users\Asus\source\repos\lab2 opengl\x64\Debug\lab2 opengl.exe
