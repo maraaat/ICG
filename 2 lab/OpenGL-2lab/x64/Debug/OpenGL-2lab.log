@@ -1,2 +1,18 @@
 ﻿  OpenGL-2lab.cpp
-  OpenGL-2lab.vcxproj -> C:\Users\Asus\source\repos\OpenGL-2lab\x64\Debug\OpenGL-2lab.exe
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: APIENTRY: изменение макроопределения
+C:\Users\Asus\Downloads\vcplg\vcpkg-master\installed\x64-windows\include\GLFW\glfw3.h(123): message : см. предыдущее определение "APIENTRY"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(28,19): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(33,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(40,53): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(40,39): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(40,25): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(41,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(42,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(30,15): warning C4101: y1: неиспользованная локальная переменная
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(30,11): warning C4101: x1: неиспользованная локальная переменная
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(66,19): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(67,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(73,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(74,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(122,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+  OpenGL-2lab.vcxproj -> C:\Users\Asus\Documents\GitHub\ICG\2 lab\x64\Debug\OpenGL-2lab.exe

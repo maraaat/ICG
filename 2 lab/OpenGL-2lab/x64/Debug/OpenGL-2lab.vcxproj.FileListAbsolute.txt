@@ -1,1 +1,2 @@
 C:\Users\Asus\source\repos\OpenGL-2lab\OpenGL-2lab\x64\Debug\OpenGL-2lab.vcxproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\x64\Debug\OpenGL-2lab.vcxproj.CopyComplete

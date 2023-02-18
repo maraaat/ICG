@@ -1,12 +1,14 @@
 ﻿#include <GLFW/glfw3.h>
+#include <Windows.h>
+#include <math.h>
 
 void Triangle() {
     glBegin(GL_TRIANGLES);
-    glColor3f(0.0, 1.0, 0.0);
+    glColor3f(1.0, 1.0, 0.0);
     glVertex2f(-0.25f, -0.25f);
     glColor3f(0.0, 0.0, 1.0);
     glVertex2f(0.0f, 0.25f);
-    glColor3f(1.0, 1.0, 0.0);
+    glColor3f(1.0, 1.0, 1.0);
     glVertex2f(0.25f, -0.25f);
     glEnd();
 }
@@ -19,6 +21,59 @@ void Points() {
     glVertex2f(0.0f, 0.5f);
     glColor3f(0.0, 0.0, 1.0);
     glVertex2f(0.5f, -0.5f);
+    glEnd();
+}
+
+void Circle() {
+    float c = 0.01;
+    float x, y;
+    float x1, y1;
+    float pnts = 40;
+    float l = 0.5;
+    float a = 3.14159265359 * 2 / pnts;
+    glRotatef(95, 0, 0, 1);
+   // glPushMatrix();
+    glBegin(GL_TRIANGLE_FAN); //соединяет все последующие точки с первой
+        //glColor3f(1, 1, 0);
+        glVertex2f(0, 0);
+        for (int i = -1; i < pnts; i++) {
+            glColor3f(c + 0.01 * i, c + 0.01 * i, c + 0.01 * i);
+            x = sin(a * i) * l;
+            y = cos(a * i) * l;
+            glVertex2f(x, y);
+        }
+    glEnd();
+    //// glLoadIdentity();
+    //glPopMatrix();
+    //glClear(GL_COLOR_BUFFER_BIT);
+    //// glPushMatrix();
+    //glBegin(GL_TRIANGLE_FAN); //соединяет все последующие точки с первой
+    //glColor3f(1, 1, 0);
+    //glVertex2f(0, 0);
+    //for (int i = 1; i < pnts; i++) {
+    //    x1 = sin(a * i) * l;
+    //    y1 = cos(a * i) * l;
+    //    glVertex2f(x1, y1);
+    //}
+    //glEnd();
+    //glPopMatrix();
+    //glClear(GL_COLOR_BUFFER_BIT);
+}
+
+void CircleLitLit() {
+    float x, y;
+    float pnts = 40;
+    float l = 0.07;
+    float a = 3.14159265359 * 2 / pnts;
+    glTranslatef(0.25, 0, 0);
+    glBegin(GL_TRIANGLE_FAN); //соединяет все последующие точки с первой
+    glColor3f(0, 0, 0);
+    glVertex2f(0, 0);
+    for (int i = -1; i < pnts; i++) {
+        x = sin(a * i) * l;
+        y = cos(a * i) * l;
+        glVertex2f(x, y);
+    }
     glEnd();
 }
 
@@ -38,7 +93,7 @@ int main(void)
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(800, 600, "World", NULL, NULL);
+    window = glfwCreateWindow(800, 800, "World", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -52,22 +107,30 @@ int main(void)
     while (!glfwWindowShouldClose(window))  //цикл, работающий пока окно не закрыто
     {
 
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);  //цвет зачистки
+        glClearColor(0.9f, 0.6f, 0.5f, 1.0f);  //цвет зачистки
         glClear(GL_COLOR_BUFFER_BIT);
 
+     
 
+       glRotatef(45, 0, 0, 1);
+       // glTranslatef(-0.01, 0, 0);
+        
+        glPushMatrix();
+        Circle();
+        CircleLitLit();
+        //glLoadIdentity();
+        glTranslatef(0.01, 0, 0);
+        glPushMatrix();
+      
 
+        /*glPushMatrix();*/
+        //glLoadIdentity();
+        
+        //glRotatef(45, 0, 0, 1);
+        //glTranslatef(-0.5, -0.5, 0);
+        //CircleLitLit();
+        glPopMatrix();
 
-        //for (int i = 0; i < 10; i++) {
-
-        //    //glLoadIdentity();  //единичная матрица, к-я возвращет с-му коорд в исх состояние
-
-        //    glPushMatrix(); //сохраняем текущую матрицу в стек
-        //    glRotatef(45 * i, 0, 0, 1); //1 - угол, 2-4 --- X,Y,Z
-        //    glTranslatef(0.5, 0, 0);
-        //    Triangle();
-        //    glPopMatrix(); //загружаем состояние матрицы, к-ое было в начале цикла
-        //}
 
 
 
@@ -75,10 +138,10 @@ int main(void)
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
+        Sleep(100);
         /* Poll for and process events */
         glfwPollEvents();
     }
-
     glfwTerminate();
     return 0;
 }
