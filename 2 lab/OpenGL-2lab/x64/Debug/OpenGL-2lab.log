@@ -1,18 +1,43 @@
 ﻿  OpenGL-2lab.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: APIENTRY: изменение макроопределения
 C:\Users\Asus\Downloads\vcplg\vcpkg-master\installed\x64-windows\include\GLFW\glfw3.h(123): message : см. предыдущее определение "APIENTRY"
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(28,19): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(33,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(40,53): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(40,39): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(40,25): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(41,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(42,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(30,15): warning C4101: y1: неиспользованная локальная переменная
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(30,11): warning C4101: x1: неиспользованная локальная переменная
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(66,19): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(67,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(73,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(74,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(122,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(270,19): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(274,18): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(275,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(277,17): warning C4305: -=: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(280,28): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(282,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(289,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(290,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(296,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(297,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(272,15): warning C4101: y1: неиспользованная локальная переменная
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(272,11): warning C4101: x1: неиспользованная локальная переменная
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(309,19): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(310,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(320,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(321,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(330,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(352,18): warning C4305: -=: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(358,35): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(358,28): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(371,30): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(379,41): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(379,29): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(379,17): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(380,28): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(393,34): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(395,24): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(409,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(411,40): warning C4305: =: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(412,41): warning C4305: =: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(414,20): warning C4305: =: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(414,40): warning C4305: -=: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(417,21): warning C4305: =: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(417,41): warning C4305: -=: усечение из "double" в "float"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(420,28): warning C4244: +=: преобразование "double" в "FLOAT", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(421,28): warning C4244: +=: преобразование "double" в "FLOAT", возможна потеря данных
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(473,32): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(483,36): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Asus\Documents\GitHub\ICG\2 lab\OpenGL-2lab\OpenGL-2lab.cpp(495,33): warning C4305: аргумент: усечение из "double" в "GLfloat"
   OpenGL-2lab.vcxproj -> C:\Users\Asus\Documents\GitHub\ICG\2 lab\x64\Debug\OpenGL-2lab.exe
