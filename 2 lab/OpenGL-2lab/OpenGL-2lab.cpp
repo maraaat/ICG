@@ -350,7 +350,7 @@ void Pyramid() {
 void ShowWorld() {
    // glPushMatrix();
     scale -= 0.01;
-    for (int i = 0; i < 25; i++) {
+    for (int i = 0; i < 25; i++) { //создание плоского пространства в клеточку
         for (int j = 0; j < 25; j++) {
             glPushMatrix();
             if ((i + j) % 2 == 0) glColor3f(0, 0.5, 0);
@@ -365,33 +365,43 @@ void ShowWorld() {
             glPopMatrix();
         }
     }
-    glPushMatrix();
+    glPushMatrix();  //статическая пирамида
     glTranslatef(5,5,0);
         glRotatef(45, 0, 0, 1);
         glColor3f(0.5, 0.1, 0);
         Pyramid();
     glPopMatrix();
 
-    glPushMatrix();
+    glPushMatrix();  //пирамида, с меняющимся масштабом
     if (scale ==  0) scale =1;
     glTranslatef(10, 10, 0);
-    //glRotatef(45, 0, 0, 1);
     glScalef(cos(scale), cos(scale), cos(scale));
     glColor3f(0.7, 0.1, 0.9);
         Pyramid();
     glPopMatrix();
 
-    glPushMatrix();
+    glPushMatrix(); //вращающаяся пирамида
     glTranslatef(15, 15, 0);
-    //glRotatef(45, 0, 0, 1);
     glRotatef(al, 0, 0, 1);
     glColor3f(1, 1, 0);
-        Pyramid();
+        //Pyramid();
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex3f(0, 0, 2);
+    glColor3f(0.1, 0.7, 0);
+    glVertex3f(1, 1, 0);
+    glColor3f(1, 0, 0.7);
+    glVertex3f(1, -1, 0);
+    glColor3f(0.5, 0.5, 0.5);
+    glVertex3f(-1, -1, 0);
+    glColor3f(0, 0, 0.3);
+    glVertex3f(-1, 1, 0);
+    glColor3f(0.3, 0, 0);
+    glVertex3f(1, 1, 0);
+    glEnd();
     glPopMatrix();
 
-    glPushMatrix();
+    glPushMatrix(); //движущаяся пирамида
     glTranslatef(sin(scale)*(-10)+10, 0, 0);
-    //glRotatef(45, 0, 0, 1);
     glColor3f(0, 0, 0.6);
         Pyramid();
     glPopMatrix();
@@ -454,8 +464,8 @@ int main(void)
     //glOrtho(-2, 2, -2, 2, -1, 1); // Обновление размера начальной матрицы
     glEnable(GL_DEPTH_TEST); //включение буфера глубины
     glFrustum(-1, 1, -1, 1, 2, 80); //крайний параметр - расстояние от камеры до дальнего положения Z, предпосл - ближняя плоскость отсечения по оси Z. первые 4  -границы ближней плоскости отсечнеие Х и У
-    // от 2 до 6 видимый объем по Z
-   // glTranslatef(0, 0, -6);
+    // от 2 до 80 видимый объем по Z
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))  //цикл, работающий пока окно не закрыто
     {
@@ -467,8 +477,7 @@ int main(void)
             ShowWorld();
         glPopMatrix();
 
-        //glRotatef(2, 1, 0, 0);
-        //glTranslatef(0, 0, -0.05);
+        
         glPushMatrix();
         glTranslatef(0.9, 0, -6);
         glBegin(GL_TRIANGLES);
@@ -495,28 +504,9 @@ int main(void)
         glTranslatef(0.0, 0.3, 0);
         RoundAround();
         glPopMatrix();
-        
-        //glPushMatrix(); //динамическое уменьшение фигуры 
-        //scale -= 0.01;
-        //glLoadIdentity();
-        //glTranslatef(0.75, 0.75, 0);
-        //glScalef(scale, scale, scale);
-        //Triangle();
-        //glPopMatrix();
+   
 
 
-
-
-
-
-
-
-
-
-
-
-
-        //glfwSetScrollCallback(window, scroll_callback);
         glfwSetKeyCallback(window, key_callback); //ф-я выхода на Еск
 
         /* Swap front and back buffers */
