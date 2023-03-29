@@ -407,16 +407,16 @@ void ShowWorld() {
     glPopMatrix();
 }
 
-float Xalfa = 20;
-float Zalfa = 0;
+float X_alfa = 20;
+float Z_alfa = 0;
 POINTFLOAT pos = { 0,0 };
 void MoveCamera() {
-    if (GetKeyState(VK_UP) < 0) Xalfa = ++Xalfa > 180 ? 180 : Xalfa;
-    if (GetKeyState(VK_DOWN) < 0) Xalfa = --Xalfa < 0 ? 0 : Xalfa;
-    if (GetKeyState(VK_LEFT) < 0) Zalfa++;
-    if (GetKeyState(VK_RIGHT) < 0) Zalfa--;
+    if (GetKeyState(VK_UP) < 0) X_alfa = ++X_alfa > 180 ? 180 : X_alfa;
+    if (GetKeyState(VK_DOWN) < 0) X_alfa = --X_alfa < 0 ? 0 : X_alfa;
+    if (GetKeyState(VK_LEFT) < 0) Z_alfa++;
+    if (GetKeyState(VK_RIGHT) < 0) Z_alfa--;
 
-    float ugol = -Zalfa / 180 * 3.14;
+    float ugol = -Z_alfa / 180 * 3.14;
     float speed = 0;
     if (GetKeyState('W') < 0) speed=0.1;
     if (GetKeyState('S') < 0) speed=-0.1;
@@ -431,8 +431,8 @@ void MoveCamera() {
         pos.y += cos(ugol) * speed;
     }
 
-    glRotatef(-Xalfa, 1, 0, 0);
-    glRotatef(-Zalfa, 0, 0, 1);
+    glRotatef(-X_alfa, 1, 0, 0);
+    glRotatef(-Z_alfa, 0, 0, 1);
     glTranslatef(-pos.x, -pos.y, -3);
 }
 
