@@ -9,13 +9,6 @@ static float al;
 static float persp = 1;
 static float scale = 1;
 
-
-
-GLfloat mat_specular[] = { 1.0,1.0,1.0,1.0 };
-GLfloat mat_shininess[] = { 50.0 };
-GLfloat light_position[] = { 1.0,1.0,1.0,0.0 };
-GLfloat white_light[] = { 1.0,1.0,1.0,1.0 };
-
 void Triangle() {
     glBegin(GL_TRIANGLES);
     glColor3f(1.0, 1.0, 0.0);
@@ -214,23 +207,6 @@ void ShowWorld() {
     // glPushMatrix();
     glNormal3f(0, 0, 1);
     scale -= 0.01;
-    
-
-    glLightModeli(GL_FRONT, GL_TRUE);
-    GLfloat front_color[] = { 0,1,0,1 };
-    GLfloat back_color[] = { 0,0,1,1 };
-    glMaterialfv(GL_FRONT, GL_DIFFUSE, front_color);
-    glMaterialfv(GL_BACK, GL_DIFFUSE, back_color);
-
-
-    //GLfloat back_color[] = { 0,1,0,1 };
-    //glMaterialfv(GL_FRONT, GL_DIFFUSE, back_color);
-    //glPushMatrix();
-    //    glRotatef(theta, 0, 1, 0);
-    //    float position[] = { 0,0,1,0 }; //источник света
-    //    glLightfv(GL_LIGHT0, GL_POSITION, position); //параметры для нулевого источника света
-    //glPopMatrix();
-    //theta += 1.0f;
 
     for (int i = 0; i < 25; i++) { //создание плоского пространства в клеточку
         for (int j = 0; j < 25; j++) {
@@ -306,8 +282,6 @@ void ShowWorld() {
         Texture(white, vertextobase, texCoord, texInd, texIndCnt);
     glPopMatrix();
 
-    
-
 }
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode) //1- указатель на окно, 2 - кнопка, 3 - действие над клавишей, 4 - модификаторы
@@ -336,10 +310,6 @@ int main(void)
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
-   /* glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glMatrixMode(GL_MODELVIEW);*/
-
     glEnable(GL_DEPTH_TEST); //включение буфера глубины
     glFrustum(-1, 1, -1, 1, 2, 80); //крайний параметр - расстояние от камеры до дальнего положения Z, предпосл - ближняя плоскость отсечения по оси Z. первые 4  -границы ближней плоскости отсечнеие Х и У
     // от 2 до 80 видимый объем по Z
@@ -362,9 +332,7 @@ int main(void)
  
         static float theta = 0;
 
-        
-       // theta += 1.0f;
-        theta += 0.25;
+        theta += 0.3;
         if (theta > 180) theta -= 360;
 
         glPushMatrix();
@@ -385,14 +353,14 @@ int main(void)
                 GLfloat light2_position[] = { 17.0, 8.0, 1.0, 1.0 };
                 GLfloat spec[] = { 0,1,1.0,1.0 };
                 GLfloat specdop[] = { 1.0,1.0,1.0,1.0 };
-                glEnable(GL_LIGHT0);
+                glEnable(GL_LIGHT1);
 
-                glLightfv(GL_LIGHT0, GL_DIFFUSE, light2_diffuse);
-                glLightfv(GL_LIGHT0, GL_POSITION, light2_position);
-                glLightfv(GL_LIGHT0, GL_SPECULAR, spec);
-                glLightf(GL_LIGHT0, GL_CONSTANT_ATTENUATION, 0.2);
-                glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 3);
-                glLightf(GL_LIGHT0, GL_QUADRATIC_ATTENUATION, 0.05);
+                glLightfv(GL_LIGHT1, GL_DIFFUSE, light2_diffuse);
+                glLightfv(GL_LIGHT1, GL_POSITION, light2_position);
+                glLightfv(GL_LIGHT1, GL_SPECULAR, spec);
+                glLightf(GL_LIGHT1, GL_CONSTANT_ATTENUATION, 0.2);
+                glLightf(GL_LIGHT1, GL_LINEAR_ATTENUATION, 3);
+                glLightf(GL_LIGHT1, GL_QUADRATIC_ATTENUATION, 0.05);
                 glMateriali(GL_FRONT, GL_SHININESS, 1);
                 glMaterialfv(GL_FRONT, GL_SPECULAR, specdop);
 
