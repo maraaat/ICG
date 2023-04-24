@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24", "24.vcxproj", "{8F170127-197C-494A-A919-7CF23BE9839F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{459B3A3C-B8A1-4202-8077-FB6B3E6A84E0}"
+	ProjectSection(SolutionItems) = preProject
+		callbacks.h = callbacks.h
+		camera.cpp = camera.cpp
+		camera.h = camera.h
+		glut_backend.cpp = glut_backend.cpp
+		glut_backend.h = glut_backend.h
+		lighting_technique.cpp = lighting_technique.cpp
+		lighting_technique.h = lighting_technique.h
+		main.cpp = main.cpp
+		Makefile = Makefile
+		math_3d.cpp = math_3d.cpp
+		math_3d.h = math_3d.h
+		mesh.cpp = mesh.cpp
+		mesh.h = mesh.h
+		pipeline.cpp = pipeline.cpp
+		pipeline.h = pipeline.h
+		shadow_map_fbo.cpp = shadow_map_fbo.cpp
+		shadow_map_fbo.h = shadow_map_fbo.h
+		shadow_map_technique.cpp = shadow_map_technique.cpp
+		shadow_map_technique.h = shadow_map_technique.h
+		technique.cpp = technique.cpp
+		technique.h = technique.h
+		texture.cpp = texture.cpp
+		texture.h = texture.h
+		util.h = util.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Debug|x64.ActiveCfg = Debug|x64
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Debug|x64.Build.0 = Debug|x64
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Debug|x86.Build.0 = Debug|Win32
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Release|x64.ActiveCfg = Release|x64
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Release|x64.Build.0 = Release|x64
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Release|x86.ActiveCfg = Release|Win32
+		{8F170127-197C-494A-A919-7CF23BE9839F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {080F9536-8A6D-469D-BB27-34943D4D21D9}
+	EndGlobalSection
+EndGlobal
