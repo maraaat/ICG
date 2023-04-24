@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27", "27.vcxproj", "{8DA7267B-565F-43C5-BF47-1F4CD98B1599}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{D61C7029-08AA-414D-9329-FAF490F2C493}"
+	ProjectSection(SolutionItems) = preProject
+		billboard_list.cpp = billboard_list.cpp
+		billboard_list.h = billboard_list.h
+		billboard_technique.cpp = billboard_technique.cpp
+		billboard_technique.h = billboard_technique.h
+		callbacks.h = callbacks.h
+		camera.cpp = camera.cpp
+		camera.h = camera.h
+		engine_common.h = engine_common.h
+		glut_backend.cpp = glut_backend.cpp
+		glut_backend.h = glut_backend.h
+		lighting_technique.cpp = lighting_technique.cpp
+		lighting_technique.h = lighting_technique.h
+		main.cpp = main.cpp
+		Makefile = Makefile
+		math_3d.cpp = math_3d.cpp
+		math_3d.h = math_3d.h
+		mesh.cpp = mesh.cpp
+		mesh.h = mesh.h
+		pipeline.cpp = pipeline.cpp
+		pipeline.h = pipeline.h
+		technique.cpp = technique.cpp
+		technique.h = technique.h
+		texture.cpp = texture.cpp
+		texture.h = texture.h
+		util.h = util.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Debug|x64.ActiveCfg = Debug|x64
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Debug|x64.Build.0 = Debug|x64
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Debug|x86.ActiveCfg = Debug|Win32
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Debug|x86.Build.0 = Debug|Win32
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Release|x64.ActiveCfg = Release|x64
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Release|x64.Build.0 = Release|x64
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Release|x86.ActiveCfg = Release|Win32
+		{8DA7267B-565F-43C5-BF47-1F4CD98B1599}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57B36AFD-2F17-4CD8-BD7A-B78B36E35B81}
+	EndGlobalSection
+EndGlobal
